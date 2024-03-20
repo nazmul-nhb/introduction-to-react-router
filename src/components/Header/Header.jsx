@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div>
-            <h2 className="text-green-800">Navigation</h2>
-            <nav className="flex justify-between gap-4">
-                <a href="/Home">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact Us</a>
+        <div className="max-w-[1920px] w-full md:px-24 mt-16 mx-auto flex flex-col gap-8">
+            <h2 className="text-green-800 font-extrabold text-4xl">Introduction to React Router</h2>
+            <nav className="flex justify-between gap-5">
+                <Link to={'/'}>Home</Link>
+                <Link to={'/users'}>Users</Link>
+                <Link to={'/about'}>About</Link>
+                <Link to={'/contact'}>Contact Us</Link>
+                <Link to={'/contact'}>Contact Us</Link>
             </nav>
         </div>
     );
